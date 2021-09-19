@@ -279,9 +279,9 @@ python manage.py migrate
 
 ## Checklist
 
-1. [ ] Create Your own Gitlab Repo. If you did the previous Tutorial (Initial Setup and Doing the Tutorial), then you're good to go.
+1. [x] Create Your own Gitlab Repo. If you did the previous Tutorial (Initial Setup and Doing the Tutorial), then you're good to go.
 
-2. [ ] Create virtual environment and make sure you can run your Django project (see Tutorial: Running Your Django Project)
+2. [x] Create virtual environment and make sure you can run your Django project (see Tutorial: Running Your Django Project)
 
 3. [ ] Create an admin user (see: https://docs.djangoproject.com/en/1.8/intro/tutorial02/)
 
