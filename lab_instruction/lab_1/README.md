@@ -283,12 +283,12 @@ python manage.py migrate
 
 2. [x] Create virtual environment and make sure you can run your Django project (see Tutorial: Running Your Django Project)
 
-3. [ ] Create an admin user (see: https://docs.djangoproject.com/en/1.8/intro/tutorial02/)
+3. [x] Create an admin user (see: https://docs.djangoproject.com/en/1.8/intro/tutorial02/)
 
 4. Display your profile page:
 
-   1. [ ] Implement TODOs on test.py
-   2. [ ] Open views.py on lab_1 folder, implement code in lines 4, 6, and 7.
+   1. [x] Implement TODOs on test.py
+   2. [x] Open views.py on lab_1 folder, implement code in lines 4, 6, and 7.
    3. [ ] Refresh http://localhost:8000/
    4. [ ] See your profile on the webpage
 

@@ -12,8 +12,17 @@
         <th>DOB</th>
       </tr>
       <!-- TODO loop from Friend model -->
+      <body>    <!-- coba dulu kayak gini, kalo gabisa baru tes lagi -->
+        {% for i in friends %}
+          <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.npm}}</td>
+            <td>{{i.dob}}</td>
+          </tr>
+          {% endfor %}
+      </body>
       <!-- EXAMPLE SECTION -->
-      <tr>
+      <!-- <tr>
         <td>Asmara Nugi</td>
         <td>1706032156</td>
         <td>May 1, 1999</td>
@@ -23,7 +32,7 @@
         <td>1706032370</td>
         <td>Sept 11, 1998</td>
       </tr>
-      <!-- END SECTION -->
+      END SECTION -->
     </table>
   </body>
 </html>
