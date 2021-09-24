@@ -136,16 +136,16 @@ Kemudian juga ada beberapa pertanyaan singkat yang perlu dijawab dalam file `lab
 
 ## Lab Checklist
 
-1. [ ] Create new app by running `django-admin startapp lab_2` in root directory (`pbp-lab`).
+1. [X] Create new app by running `django-admin startapp lab_2` in root directory (`pbp-lab`).
 
 2. [ ] Register `lab-2/` path in `praktikum/urls.py` file, so that you can access the app by accessing [http://localhost:8000/lab-2](http://localhost:8000/lab-2)
 
-3. [ ] Add `lab_2` into `INSTALLED_APPS` in `praktikum/settings.py` file.
+3. [X] Add `lab_2` into `INSTALLED_APPS` in `praktikum/settings.py` file.
 
 4. Create `Note` model:
 
-   1. [ ] Create `Note` model that contains `to`, `from`, `title`, and `message`.
-   2. [ ] Register your model on `lab_2/admin.py` so you can access your database from Django Admin. Don't forget to run migration.
+   1. [X] Create `Note` model that contains `to`, `from`, `title`, and `message`.
+   2. [X] Register your model on `lab_2/admin.py` so you can access your database from Django Admin. Don't forget to run migration.
    3. [ ] Add `Note` information via Django Admin (see: https://docs.djangoproject.com/en/3.2/intro/tutorial02/).
 
 5. Return `Note` in HTML format:

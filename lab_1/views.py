@@ -8,12 +8,12 @@ curr_year = int(datetime.now().strftime("%Y"))
 birth_date = date(2002, 8, 20)  # TODO Implement this, format (Year, Month, Date)
 npm = 2006482773 # TODO Implement this
 
-
+# ini untuk ngelink ke files html nya
 def index(request):
     response = {'name': mhs_name,
                 'age': calculate_age(birth_date.year),
                 'npm': npm}
-    return render(request, 'index_lab1.html', response)
+    return render(request, 'index_lab1.html', response) # masukin sesuai nama file html nya
 
 
 def calculate_age(birth_year):

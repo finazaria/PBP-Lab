@@ -24,7 +24,9 @@ class Lab1UnitTest(TestCase):
         self.assertIn('<h1>Hello my name is ' +
                     mhs_name + '</h1>', html_response)
         self.assertFalse(len(mhs_name) == 0)
-
+    
+    # manage.py akan error test nya kalo ada kesalahan di tests.py
+    # semua to do harus dikerjakan dulu 
     def test_calculate_age_is_correct(self):
         self.assertEqual(0, calculate_age(date.today().year))
         # TODO fix unit test if failed
