@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Notes</title>
+    </head>
+    <body>
+        <table border="2">   <!-- add border to the table-->
+            <tr>
+                <th>To</th>     <!-- th : table heading -->
+                <th>From</th>
+                <th>Title</th>
+                <th>Message</th>
+            </tr>
+            <body>   
+                {% for n in notes %}
+                    <tr>
+                        <td>{{n.to}}</td> <!-- td : table data -->
+                        <td>{{n.From}}</td>
+                        <td>{{n.title}}</td>
+                        <td>{{n.message}}</td>
+                    </tr>
+                    {% endfor %}
+            </body>
+        </table>
+    </body>
+</html>

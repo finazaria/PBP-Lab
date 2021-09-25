@@ -138,7 +138,7 @@ Kemudian juga ada beberapa pertanyaan singkat yang perlu dijawab dalam file `lab
 
 1. [X] Create new app by running `django-admin startapp lab_2` in root directory (`pbp-lab`).
 
-2. [ ] Register `lab-2/` path in `praktikum/urls.py` file, so that you can access the app by accessing [http://localhost:8000/lab-2](http://localhost:8000/lab-2)
+2. [X] Register `lab-2/` path in `praktikum/urls.py` file, so that you can access the app by accessing [http://localhost:8000/lab-2](http://localhost:8000/lab-2)
 
 3. [X] Add `lab_2` into `INSTALLED_APPS` in `praktikum/settings.py` file.
 
@@ -146,34 +146,34 @@ Kemudian juga ada beberapa pertanyaan singkat yang perlu dijawab dalam file `lab
 
    1. [X] Create `Note` model that contains `to`, `from`, `title`, and `message`.
    2. [X] Register your model on `lab_2/admin.py` so you can access your database from Django Admin. Don't forget to run migration.
-   3. [ ] Add `Note` information via Django Admin (see: https://docs.djangoproject.com/en/3.2/intro/tutorial02/).
+   3. [X] Add `Note` information via Django Admin (see: https://docs.djangoproject.com/en/3.2/intro/tutorial02/).
 
 5. Return `Note` in HTML format:
 
-   1. [ ] Create `index` method in `lab_2/views.py` that render HTML for our response.
-   2. [ ] Load `Note` model in `index` method, so that you can show it later.
-   3. [ ] Create a template named `lab2.html` in `lab_2/templates` folder that contains a table as a template for out `Note` model. You can use [friend_list_lab1.html](../../lab_1/templates/friend_list_lab1.html) as an example and modify it into `lab2.html` file.
-   4. [ ] Create file `lab_2/urls.py` with route `''` for `index` path so that you can access the result by accessing [http://localhost:8000/lab-2](http://localhost:8000/lab-2)
+   1. [X] Create `index` method in `lab_2/views.py` that render HTML for our response.
+   2. [X] Load `Note` model in `index` method, so that you can show it later.
+   3. [X] Create a template named `lab2.html` in `lab_2/templates` folder that contains a table as a template for out `Note` model. You can use [friend_list_lab1.html](../../lab_1/templates/friend_list_lab1.html) as an example and modify it into `lab2.html` file.
+   4. [X] Create file `lab_2/urls.py` with route `''` for `index` path so that you can access the result by accessing [http://localhost:8000/lab-2](http://localhost:8000/lab-2)
 
 6. Return `Note` in XML format:
 
-   1. [ ] Import `HttpResponse` from `django.http.response` at the beginning of `lab_2/views.py`.
-   2. [ ] Import `serializers` from `django.core` below import in step 6.1.
-   3. [ ] Create `xml` method in `lab_2/views.py` that render XML for our response.
-   4. [ ] Load `Note` model in `xml` method, so you can show it later.
-   5. [ ] Serialize data from `Note` model into XML by using this code: `data = serializers.serialize('xml', Note.objects.all())`.
-   6. [ ] Return the `xml` method with the following code: `return HttpResponse(data, content_type="application/xml")`.
-   7. [ ] Add `/xml` route into `lab_2/urls.py`, so you can access the result by accessing [http://localhost:8000/lab-2/xml](http://localhost:8000/lab-2/xml).
+   1. [X] Import `HttpResponse` from `django.http.response` at the beginning of `lab_2/views.py`.
+   2. [X] Import `serializers` from `django.core` below import in step 6.1.
+   3. [X] Create `xml` method in `lab_2/views.py` that render XML for our response.
+   4. [X] Load `Note` model in `xml` method, so you can show it later.
+   5. [X] Serialize data from `Note` model into XML by using this code: `data = serializers.serialize('xml', Note.objects.all())`.
+   6. [X] Return the `xml` method with the following code: `return HttpResponse(data, content_type="application/xml")`.
+   7. [X] Add `/xml` route into `lab_2/urls.py`, so you can access the result by accessing [http://localhost:8000/lab-2/xml](http://localhost:8000/lab-2/xml).
 
 7. Return `Note` in JSON format:
 
-   1. [ ] Create `json` method in `lab_2/views.py` that render JSON for our response.
-   2. [ ] Load `Note` model in `json` method, so you can show it later.
-   3. [ ] Serialize data from `Note` model into JSON by using this code: `data = serializers.serialize('json', Note.objects.all())`.
-   4. [ ] Return the `json` method with the following code: `return HttpResponse(data, content_type="application/json")`.
-   5. [ ] Add `/json` route into `lab_2/urls.py`, so you can access the result by accessing [http://localhost:8000/lab-2/json](http://localhost:8000/lab-2/json).
+   1. [X] Create `json` method in `lab_2/views.py` that render JSON for our response.
+   2. [X] Load `Note` model in `json` method, so you can show it later.
+   3. [X] Serialize data from `Note` model into JSON by using this code: `data = serializers.serialize('json', Note.objects.all())`.
+   4. [X] Return the `json` method with the following code: `return HttpResponse(data, content_type="application/json")`.
+   5. [X] Add `/json` route into `lab_2/urls.py`, so you can access the result by accessing [http://localhost:8000/lab-2/json](http://localhost:8000/lab-2/json).
 
-8. [ ] Access all the endpoint that you have built in this lab using Web Browser, cURL, or Postman.
+8. [X] Access all the endpoint that you have built in this lab using Web Browser, cURL, or Postman.
 
 9. [ ] Write the answer from the question above in `lab_answer/lab_2.md` file.
 
