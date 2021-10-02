@@ -138,35 +138,35 @@ Anda diminta untuk membuat sebuah app baru di dalam project ini bernama `lab_3`.
 
 ## Lab Checklist
 
-1. [ ] Create new app by running `django-admin startapp lab_3` in root directory (`pbp-lab`).
+1. [X] Create new app by running `django-admin startapp lab_3` in root directory (`pbp-lab`).
 
-2. [ ] Register `lab-3/` path in `praktikum/urls.py` file, so that you can access the app by accessing [http://localhost:8000/lab-3](http://localhost:8000/lab-3)
+2. [X] Register `lab-3/` path in `praktikum/urls.py` file, so that you can access the app by accessing [http://localhost:8000/lab-3](http://localhost:8000/lab-3)
 
-3. [ ] Add `lab_3` into `INSTALLED_APPS` in `praktikum/settings.py` file.
+3. [X] Add `lab_3` into `INSTALLED_APPS` in `praktikum/settings.py` file.
 
 4. Show page to list created `Friend`:
 
-   1. [ ] Create `index` method in `lab_3/views.py` that render HTML for our response. Implement it just like we implement `friend_list` method in [lab_1/views.py](../../lab_1/views.py).
-   2. [ ] Create a template named `lab3_index.html` in `lab_3/templates` folder that contains a table as a template for our `Friend` model. You can use [friend_list_lab1.html](../../lab_1/templates/friend_list_lab1.html) as an example and modify it into `lab3_index.html` file.
-   3. [ ] Create file `lab_3/urls.py` with route `''` for `index` path so that you can access the result by accessing [http://localhost:8000/lab-3](http://localhost:8000/lab-3).
+   1. [X] Create `index` method in `lab_3/views.py` that render HTML for our response. Implement it just like we implement `friend_list` method in [lab_1/views.py](../../lab_1/views.py).
+   2. [X] Create a template named `lab3_index.html` in `lab_3/templates` folder that contains a table as a template for our `Friend` model. You can use [friend_list_lab1.html](../../lab_1/templates/friend_list_lab1.html) as an example and modify it into `lab3_index.html` file.
+   3. [X] Create file `lab_3/urls.py` with route `''` for `index` path so that you can access the result by accessing [http://localhost:8000/lab-3](http://localhost:8000/lab-3).
 
 5. Create form for creating new `Friend`:
 
-   1. [ ] Create `forms.py` inside `lab_3` folder.
-   2. [ ] Create class `FriendForm` inside `lab_3/forms.py` file.
-   3. [ ] Implement class `FriendForm`. Assign `model` in class `Meta` with `Friend` model from `lab_1/models.py`.
-   4. [ ] Create a template named `lab3_form.html` in `lab_3/templates` folder that contains a form for inserting our new `Friend` object.
-   5. [ ] Implement `lab3_form.html` with HTML code so that it will render our form. Use `POST` as `method` and `""` as `action` in `<form>` tag.
-   6. [ ] Create `add_friend` method in `lab_3/views.py` that render HTML for our form.
-   7. [ ] Implement `add_friend` method so that you can create `Friend` with data from the form. For the example you can read the tutorial [here](https://www.geeksforgeeks.org/django-modelform-create-form-from-models/).
-   8. [ ] Check request method in `add_friend`. If the request method is `POST` then we need to redirect to [`/lab-3`](http://localhost:8000/lab-3) after validating form data and save the data if valid.
-   9. [ ] Add `add` route into `lab_3/urls.py`, so you can access the result by accessing [http://localhost:8000/lab-3/add](http://localhost:8000/lab-3/add).
+   1. [X] Create `forms.py` inside `lab_3` folder.
+   2. [X] Create class `FriendForm` inside `lab_3/forms.py` file.
+   3. [X] Implement class `FriendForm`. Assign `model` in class `Meta` with `Friend` model from `lab_1/models.py`.
+   4. [X] Create a template named `lab3_form.html` in `lab_3/templates` folder that contains a form for inserting our new `Friend` object.
+   5. [X] Implement `lab3_form.html` with HTML code so that it will render our form. Use `POST` as `method` and `""` as `action` in `<form>` tag.
+   6. [X] Create `add_friend` method in `lab_3/views.py` that render HTML for our form.
+   7. [X] Implement `add_friend` method so that you can create `Friend` with data from the form. For the example you can read the tutorial [here](https://www.geeksforgeeks.org/django-modelform-create-form-from-models/).
+   8. [X] Check request method in `add_friend`. If the request method is `POST` then we need to redirect to [`/lab-3`](http://localhost:8000/lab-3) after validating form data and save the data if valid.
+   9. [X] Add `add` route into `lab_3/urls.py`, so you can access the result by accessing [http://localhost:8000/lab-3/add](http://localhost:8000/lab-3/add).
 
-6. [ ] Try the application that you have built in step before using Web Browser. Try it before going to next checklist.
+6. [X] Try the application that you have built in step before using Web Browser. Try it before going to next checklist.
 
-7. [ ] Enable form only for authenticated user by adding [decorator](https://docs.djangoproject.com/en/3.2/topics/auth/default/#authentication-in-web-requests) `@login_required` with `/admin/login/` as `login_url` parameter before `index` and `add_friend` method declaration in `lab_3/views.py`.
+7. [X] Enable form only for authenticated user by adding [decorator](https://docs.djangoproject.com/en/3.2/topics/auth/default/#authentication-in-web-requests) `@login_required` with `/admin/login/` as `login_url` parameter before `index` and `add_friend` method declaration in `lab_3/views.py`.
 
-8. [ ] Try the application that you have built in step before using Web Browser. See if you find any differences.
+8. [X] Try the application that you have built in step before using Web Browser. See if you find any differences.
 
 ## Referensi
 

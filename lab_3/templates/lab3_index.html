@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Friend List</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>NPM</th>
+                <th>DOB</th>
+            </tr>
+            <!-- TODO loop from Friend model -->
+            <body>    
+                {% for i in friends %}
+                    <tr>
+                        <td>{{i.name}}</td>
+                        <td>{{i.npm}}</td>
+                        <td>{{i.dob}}</td>
+                    </tr>
+                    {% endfor %}
+            </body>
+        </table>
+    </body>
+</html>
