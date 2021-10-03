@@ -13,6 +13,7 @@ def index(request):
     response = {'notes' : notes}             # Harus dictionary 
     # jadi nanti 'notes' ini yang kita bawa untuk jadi variable di html files kita
     return render(request, 'lab2.html', response)
+    # Render => combines a given template dengan dictionary yang udah kita buat tadi => response
 
 # Creating XML method to render XML for our response
 # fungsinya sama kyk html di atas, cuma ini untuk XML 

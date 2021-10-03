@@ -5,15 +5,15 @@ from lab_1.models import Friend
 from lab_3.forms import FriendForm
 
 # ini tampilan friends biasa
+@login_required(login_url='/admin/login/')
 def index(request):
     friends = Friend.objects.all().values() 
     response = {'friends': friends}          # To save the responds
     return render(request, 'lab3_index.html', response)
 
-@login_required(login_url='/admin/login/')
-
 # Method to create Friend with data from the Form
 # To render the form and save the data directly to the database
+@login_required(login_url='/admin/login/')
 def add_friend(request):
     context = {}
 

@@ -17,6 +17,7 @@ from django.urls import path, re_path, include
 from django.contrib import admin
 import lab_1.urls as lab_1
 import lab_2.urls as lab_2
+import lab_3.urls as lab_3
 from lab_1.views import index as index_lab1
 
 urlpatterns = [

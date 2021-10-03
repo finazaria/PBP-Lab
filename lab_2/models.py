@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # Create a Note model
 class Note(models.Model):
     to = models.CharField(max_length=30)
