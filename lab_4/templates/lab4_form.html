@@ -1,0 +1,28 @@
+<!-- Contains a form to insert Note model. 
+    Untuk input note tapi gak dari admin-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Add New Note Form</title>
+        <style>
+            form {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            input {
+                background-color: lightblue;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
+    </head>
+    <!-- The form tag-->
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+
+</html>
+<!-- html form for inserting our new Note Object-->
+    
