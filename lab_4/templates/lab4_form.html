@@ -1,21 +1,24 @@
 <!-- Contains a form to insert Note model. 
     Untuk input note tapi gak dari admin-->
 
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Add New Note Form</title>
-        <style>
-            form {
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
-            input {
-                background-color: lightblue;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
-        </style>
+        <title>Notes</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'lab_4/lab4_form.css' %}">
     </head>
+
+    <div class="header">
+        <a class="title">Notes.</a>
+        <div class="header-right">
+            <a class="active" href="http://127.0.0.1:8000/lab-4/">Home</a> <!-- Go to index-->
+            <a href="http://127.0.0.1:8000/lab-4/note-list">Cards</a> <!-- Cards -->
+            <a href="http://127.0.0.1:8000/lab-4/add-note">Add a New Note</a> <!-- Link To add a new note-->
+        </div>
+    </div>
+
     <!-- The form tag-->
     <form action="" method="POST">
         {% csrf_token %}
@@ -25,4 +28,3 @@
 
 </html>
 <!-- html form for inserting our new Note Object-->
-    

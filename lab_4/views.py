@@ -30,5 +30,5 @@ def add_note(request):
 def note_list(request):
     notes = Note.objects.all().values()
     response = {'notes' : notes}
-    return render(request, 'lab4_index.html', response)
+    return render(request, 'lab4_note_list.html', response)
 

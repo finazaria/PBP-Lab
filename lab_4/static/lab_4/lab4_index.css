@@ -1,5 +1,5 @@
 body{
-    background-color: #DDDDDD;
+    background-color: #ffffff;
 }
 .header {
     overflow: hidden;
@@ -8,13 +8,15 @@ body{
 }
 .header a.title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
+    font-style: italic;
     font-weight: bold;
-    color: #DDDDDD;
+    color: #fff;
 }
 .header a {
     float: left;
-    color: #DDDDDD;
+    /* color: #ffffff; */
+    color: #fff;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -23,7 +25,7 @@ body{
     border-radius: 4px;
 }
 .header-right  :hover {
-    background-color: #DDDDDD;
+    background-color: #fff;
     color: black;
 }
 .header-right {
@@ -31,30 +33,51 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 table.dark-table {
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 0px;
-    
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th.to_column {
+    width: 10%;
+    max-width: fit-content;
+}
+th.from_column {
+    width: 10%;
+    max-width: fit-content;
+}
+th.title_column {
+    width: 20px;
+    max-width: fit-content;
+}
+th.message_column {
+    width: 50%;
 }
 h2 {
     text-align: center;
     margin-top: 90px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-table {
-    border-collapse: collapse;
+    color: #222831;
 }
 thead {
     background-color: #30475E;
-    color:#DDDDDD;
+    color: #ffffff;
+    font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
 }
 td {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    line-height: normal;
+
 }
 
 thead, td {
     border: 1px;
     padding: 5px;
 }
+tr:nth-child(even) {background-color: #f2f2f2;}
+

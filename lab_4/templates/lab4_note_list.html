@@ -1,3 +1,39 @@
 <!-- template for note in card format
 The html template bisa ngambil di bootstrap 
 To show our Note model in card format -->
+
+{% load static %}
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8" />
+        <title>Notes</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'lab_4/lab4_note_list.css' %}">
+    </head>
+
+    <div class="header">
+        <a class="title">Notes.</a>
+        <div class="header-right">
+            <a class="active" href="http://127.0.0.1:8000/lab-4/">Home</a> <!-- Go to index-->
+            <a href="http://127.0.0.1:8000/lab-4/note-list">Cards</a> <!-- Cards -->
+            <a href="http://127.0.0.1:8000/lab-4/add-note">Add a New Note</a> <!-- Link To add a new note-->
+        </div>
+    </div>
+
+    <div class="wordings"> 
+        <h2 class="sticky-notes"> Here are some Sticky Notes for you! </h2>
+        <h2 class="great-day"> Have a great day :) </h2>
+    </div>
+    
+    {% for n in notes %}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-to">To : {{n.to}}</h5>
+            <h5 class="card-from">From : {{n.From}}</h5>
+            <h5 class="card-title">{{n.title}}</h5>
+            <p class="card-line"> ------------------------------------------------- </p>
+            <p class="card-message">{{n.message}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</html>

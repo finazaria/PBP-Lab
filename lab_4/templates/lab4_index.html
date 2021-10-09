@@ -8,9 +8,9 @@
     </head>
 
     <div class="header">
-        <a class="title">Notes</a>
+        <a class="title">Notes.</a>
         <div class="header-right">
-            <a class="active" href="">Home</a> <!-- Go to index-->
+            <a class="active" href="http://127.0.0.1:8000/lab-4/">Home</a> <!-- Go to index-->
             <a href="http://127.0.0.1:8000/lab-4/note-list">Cards</a> <!-- Cards -->
             <a href="http://127.0.0.1:8000/lab-4/add-note">Add a New Note</a> <!-- Link To add a new note-->
         </div>
@@ -21,10 +21,10 @@
         <h2> Here are some notes that you've made! </h2>
         <table class="dark-table", border="2">   <!-- add border to the table-->
             <thead>
-                <th scope="col">To</th>     <!-- th : table heading -->
-                <th scope="col">From</th>
-                <th scope="col">Title</th>
-                <th scope="col">Message</th>
+                <th class="to_column" scope="col">To</th>     <!-- th : table heading -->
+                <th class="from_column" scope="col">From</th>
+                <th class="title_column" scope="col">Title</th>
+                <th class="message_column" scope="col">Message</th>
             </thead>
             <tbody>
                 {% for n in notes %}
