@@ -1,0 +1,60 @@
+body{
+    background-color: #DDDDDD;
+}
+.header {
+    overflow: hidden;
+    background-color: #222831;
+    padding: 20px 10px;
+}
+.header a.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #DDDDDD;
+}
+.header a {
+    float: left;
+    color: #DDDDDD;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header-right  :hover {
+    background-color: #DDDDDD;
+    color: black;
+}
+.header-right {
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table.dark-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    
+}
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+}
+thead {
+    background-color: #30475E;
+    color:#DDDDDD;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+thead, td {
+    border: 1px;
+    padding: 5px;
+}
