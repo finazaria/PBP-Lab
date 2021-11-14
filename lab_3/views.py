@@ -13,7 +13,7 @@ def index(request):
 
 # Method to create Friend with data from the Form
 # To render the form and save the data directly to the database
-@login_required(login_url='/admin/login/')
+# @login_required(login_url='/admin/login/')
 def add_friend(request):
     context = {}
 
